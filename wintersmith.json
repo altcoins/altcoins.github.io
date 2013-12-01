@@ -1,0 +1,15 @@
+{
+  "contents": "./contents",
+  "templates": "./templates",
+  "views": null,
+  "locals": {},
+  "require": {
+    "humanize": "humanize-number"
+  },
+  "plugins": {},
+  "ignore": [],
+  "output": "./build",
+  "baseUrl": "/",
+  "hostname": null,
+  "port": 8080
+}

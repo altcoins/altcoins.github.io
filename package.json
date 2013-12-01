@@ -1,0 +1,14 @@
+{
+  "name": "altcoins.github.io",
+  "version": "0.0.0",
+  "description": "Alternate cryptocurrencies",
+  "license": "MIT",
+  "scripts": {
+    "build": "wintersmith build --config wintersmith.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "humanize-number": "^0.0.1",
+    "wintersmith": "^2.0.9"
+  }
+}
