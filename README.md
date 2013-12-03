@@ -19,6 +19,9 @@ $ npm install
 $ npm run build
 ```
 
+The built site will be found in the root directory (GitHub pages requires this).
+You can now preview the site with your favorite static web server.
+
 ## Adding a cryptocurrency
 
 Cryptocurrencies sit in the `contents/currencies` folder as Markdown files. Each
