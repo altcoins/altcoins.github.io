@@ -40,7 +40,9 @@ html(lang='en')
 
               td= coin.metadata['coins-per-block']
 
-              - var humanNumber = locals.humanize(coin.metadata['max-coins'])
-              td= humanNumber
+              if locals.isNumber(coin.metadata['max-coins'])
+                td= locals.humanize(coin.metadata['max-coins'])
+              else
+                td= coin.metadata['max-coins']
 
               td!= coin.html

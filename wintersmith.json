@@ -4,11 +4,12 @@
   "views": null,
   "locals": {},
   "require": {
-    "humanize": "humanize-number"
+    "humanize": "humanize-number",
+    "isNumber": "lodash.isnumber"
   },
   "plugins": {},
   "ignore": [],
-  "output": "./build",
+  "output": "./",
   "baseUrl": "/",
   "hostname": null,
   "port": 8080

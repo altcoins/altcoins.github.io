@@ -6,9 +6,9 @@
   "scripts": {
     "build": "wintersmith build --config wintersmith.json"
   },
-  "dependencies": {},
   "devDependencies": {
     "humanize-number": "^0.0.1",
+    "lodash.isnumber": "^2.4.0",
     "wintersmith": "^2.0.9"
   }
 }
