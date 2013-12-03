@@ -4,9 +4,14 @@
   "description": "Alternate cryptocurrencies",
   "license": "MIT",
   "scripts": {
-    "build": "wintersmith build --config wintersmith.json"
+    "concat-css": "cat css/foundation.css css/index.css > css/bundle.css",
+    "minify-css": "cleancss -o css/bundle.min.css css/bundle.css && rm css/bundle.css",
+    "build-css": "npm run concat-css && npm run minify-css",
+    "build-wintersmith": "wintersmith build --config wintersmith.json",
+    "build": "npm run build-css & npm run build-wintersmith"
   },
   "devDependencies": {
+    "clean-css": "^2.0.2",
     "humanize-number": "^0.0.1",
     "lodash.isnumber": "^2.4.0",
     "wintersmith": "^2.0.9"
