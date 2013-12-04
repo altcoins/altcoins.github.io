@@ -12,36 +12,38 @@ html(lang='en')
 
       div.small-9.columns
         table
-          tr
-            th Name
-            th Tag
-            th Algorithm
-            th Proof of Work
-            th Proof of Stake
-            th Coins per block
-            th Maximum number of coins
-            th Synopsis
-          each coin in contents.currencies._.pages
+          thead
             tr
-              td= coin.metadata.name
-              td= coin.metadata.tag
-              td= coin.metadata.algorithm
+              th Name
+              th Tag
+              th Algorithm
+              th Proof of Work
+              th Proof of Stake
+              th Coins per block
+              th Maximum number of coins
+              th Synopsis
+          tbody
+            each coin in contents.currencies._.pages
+              tr
+                td= coin.metadata.name
+                td= coin.metadata.tag
+                td= coin.metadata.algorithm
 
-              if coin.metadata['proof-of-work']
-                td ✔
-              else
-                td ✘
+                if coin.metadata['proof-of-work']
+                  td ✔
+                else
+                  td ✘
 
-              if coin.metadata['proof-of-stake']
-                td ✔
-              else
-                td ✘
+                if coin.metadata['proof-of-stake']
+                  td ✔
+                else
+                  td ✘
 
-              td= coin.metadata['coins-per-block']
+                td= coin.metadata['coins-per-block']
 
-              if locals.isNumber(coin.metadata['max-coins'])
-                td= locals.humanize(coin.metadata['max-coins'])
-              else
-                td= coin.metadata['max-coins']
+                if locals.isNumber(coin.metadata['max-coins'])
+                  td= locals.humanize(coin.metadata['max-coins'])
+                else
+                  td= coin.metadata['max-coins']
 
-              td!= coin.html
+                td!= coin.html
