@@ -4,7 +4,7 @@ tag: PPC
 algorithm: SHA-256
 proof-of-work: true
 proof-of-stake: true
-coins-per-block: 138.41
+coins-per-block: 135.64
 max-coins: ∞
 ---
 
