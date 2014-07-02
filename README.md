@@ -1,6 +1,6 @@
 # altcoins
 
-[![Build Status](https://travis-ci.org/altcoins/altcoins.github.io.png)](https://travis-ci.org/altcoins/altcoins.github.io)
+[![Build Status](https://travis-ci.org/altcoins/altcoins.github.io.svg)](https://travis-ci.org/altcoins/altcoins.github.io)
 
 A website for discovering alternate cryptocurrencies.
 
